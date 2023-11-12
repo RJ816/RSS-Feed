@@ -2,8 +2,11 @@ document.getElementById("submit").addEventListener("click", storeUrl);
 
 function storeUrl() {
     let url = document.getElementById("url").value;
-    let key = extractSecondLevelDomain(url);
-    localStorage.setItem(key, url);
+    let storedUrls = localStorage.getItem("urlArray");
+    let urlArray = storedUrls ? JSON.parse(storedUrls) : [];
+    urlArray.push(url);
+    urlArray = Array.from(new Set(urlArray));
+    localStorage.setItem("urlArray", JSON.stringify(urlArray));
     fetchRss(url);
 }
 
