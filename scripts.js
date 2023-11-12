@@ -46,6 +46,6 @@ function validateUrl(url) {
 function parseRss() {
     let text = localStorage.getItem("microsoft");
     const xmlParser = new DOMParser();
-    let xmlRss = xmlParser.parseFromString(text,"text/xml");
+    let xmlObj = xmlParser.parseFromString(text,"text/xml");
     document.getElementById("test").innerHTML = text;
 }
