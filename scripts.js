@@ -4,6 +4,7 @@ function storeUrl() {
     let url = document.getElementById("url").value;
     let key = extractSecondLevelDomain(url);
     localStorage.setItem(key, url);
+    fetchRss(url);
 }
 
 function extractSecondLevelDomain(url) {
@@ -13,3 +14,10 @@ function extractSecondLevelDomain(url) {
     let secondLevelDomain = array[array.length - 2];
     return secondLevelDomain;
 } 
+
+function fetchRss(url) {
+    const corsProxyUrl = "https://cors-anywhere.herokuapp.com/"; //TODO remove
+    fetch(corsProxyUrl + url)
+    .then(response => response.text())
+    .then(xmlData => {localStorage.setItem("test", xmlData);});
+}
