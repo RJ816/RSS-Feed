@@ -1,67 +1,33 @@
 document.addEventListener("DOMContentLoaded", updateFeed);
-
-// local-storage-helper.js
-function checkLocalStorageSupport() {
-    if (typeof(Storage) == "undefined") {
-        console.log("local storage not supported.");
-    } else {return true};
-}
-// local-storage-helper.js
+document.getElementById("submit").addEventListener("click", processRss);
 
 function updateFeed() {
     updateStorageRssValues();
+    displayFeed();
 }
 
-function updateStorageRssValues() {
-    if (checkLocalStorageSupport()) {
-        for(let i = 0; i < localStorage.length; i++) {
-            let key = localStorage.key(i);
-            if (key.startsWith("_")) {
-                console.log("test");
-            }
-            let value = localStorage.getItem(key);
-            console.log('Key:', key, 'Value:', value);
-        }
-    }
+function displayFeed() {
+    test();
 }
 
+function test() {
+    let text = localStorage.getItem("https://calendar.gatech.edu/taxonomy/term/13/feed");
+    const xmlParser = new DOMParser();
+    const xmlDoc = xmlParser.parseFromString(text,"text/xml");
+    const feedContainer = document.getElementById("feedContainer");
+    const items = xmlDoc.querySelectorAll("item");
 
+    items.forEach(item => {
+        const title = item.querySelector("title").textContent;
+        const link = item.querySelector("link").textContent;
+        const titleElement = document.createElement("div");
+        const linkElement = document.createElement("div");
 
-document.getElementById("submit").addEventListener("click", processRss);
-
-function processRss() {
-    storeUrl();
-    parseRss();
-}
-
-function storeUrl() {
-    let url = document.getElementById("url").value;
-    if (validateUrl(url)) {
-        let storedUrls = localStorage.getItem("urlArray");
-        let urlArray = storedUrls ? JSON.parse(storedUrls) : [];
-        urlArray.push(url);
-        urlArray = Array.from(new Set(urlArray));
-        localStorage.setItem("_urlArray", JSON.stringify(urlArray));
-        fetchRss(url);
-    } else {
-        console.log("invalid url");
-    }
-}
-
-function fetchRss(url) {
-    const corsProxyUrl = "https://cors-anywhere.herokuapp.com/"; //TODO remove
-    let key = url;
-    fetch(corsProxyUrl + url)
-    .then(response => response.text())
-    .then(xmlData => {localStorage.setItem(key, xmlData);});
-}
-
-function validateUrl(url) {
-    if (url === "") {
-        return false;
-    } else {
-        return true;
-    }
+        titleElement.innerHTML = title;
+        linkElement.innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
+        feedContainer.appendChild(titleElement);
+        feedContainer.appendChild(linkElement);
+    });
 }
 
 function parseRss() {
@@ -83,6 +49,72 @@ function parseRss() {
     feedContainer.appendChild(linkElement);
     feedContainer.appendChild(descriptionElement);
 }
+
+// local-storage-helper.js
+function checkLocalStorageSupport() {
+    if (typeof(Storage) == "undefined") {
+        console.log("local storage not supported.");
+    } else {return true};
+}
+
+function updateStorageRssValues() {
+    if (checkLocalStorageSupport()) {
+        for(let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            if (key.startsWith("_")) {continue;}
+            fetchRss(key);
+        }
+    }
+}
+
+function diffUpdatedRssItems(key) {
+    let prevState = localStorage.getItem(key);
+    let currentState = fetchRss(key);
+    const addedItems = new Set([...currentState].filter(item => !prevState.has(item)));
+}
+// local-storage-helper.js
+
+//network-helper.js
+function fetchRss(url) {
+    const corsProxyUrl = "https://cors-anywhere.herokuapp.com/"; //TODO remove
+    let key = url;
+    fetch(corsProxyUrl + url)
+    .then(response => response.text())
+    //.then(xmlData => {localStorage.setItem(key, xmlData);});
+    .then(xmlData => {return xmlData;});
+}
+//network-helper.js
+
+function processRss() {
+    storeUrl();
+    parseRss();
+}
+
+function storeUrl() {
+    let url = document.getElementById("url").value;
+    if (validateUrl(url)) {
+        let storedUrls = localStorage.getItem("urlArray");
+        let urlArray = storedUrls ? JSON.parse(storedUrls) : [];
+        urlArray.push(url);
+        urlArray = Array.from(new Set(urlArray));
+        localStorage.setItem("_urlArray", JSON.stringify(urlArray));
+        fetchRss(url);
+    } else {
+        console.log("invalid url");
+    }
+}
+
+
+
+function validateUrl(url) {
+    if (url === "") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
 
 class RssDom {
     constructor (channelTitle, channelLink, channelDescription) {
