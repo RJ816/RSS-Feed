@@ -1,3 +1,32 @@
+document.addEventListener("DOMContentLoaded", updateFeed);
+
+// local-storage-helper.js
+function checkLocalStorageSupport() {
+    if (typeof(Storage) == "undefined") {
+        console.log("local storage not supported.");
+    } else {return true};
+}
+// local-storage-helper.js
+
+function updateFeed() {
+    updateStorageRssValues();
+}
+
+function updateStorageRssValues() {
+    if (checkLocalStorageSupport()) {
+        for(let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            if (key.startsWith("_")) {
+                console.log("test");
+            }
+            let value = localStorage.getItem(key);
+            console.log('Key:', key, 'Value:', value);
+        }
+    }
+}
+
+
+
 document.getElementById("submit").addEventListener("click", processRss);
 
 function processRss() {
@@ -26,14 +55,6 @@ function fetchRss(url) {
     .then(response => response.text())
     .then(xmlData => {localStorage.setItem(key, xmlData);});
 }
-
-// function extractSecondLevelDomain(url) {
-//     const urlObj = new URL(url);
-//     let hostname = urlObj.hostname;
-//     const array = hostname.split('.');
-//     let secondLevelDomain = array[array.length - 2];
-//     return secondLevelDomain;
-// } 
 
 function validateUrl(url) {
     if (url === "") {
