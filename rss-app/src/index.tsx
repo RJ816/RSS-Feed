@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 import Header from "./header/Header.tsx";
 import { App } from "./App.tsx";
 
