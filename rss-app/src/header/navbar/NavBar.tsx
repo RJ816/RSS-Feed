@@ -1,8 +1,10 @@
 import React from "react";
-import AddRss from "./AddRss.tsx";
+import AddRss from "./add-url-link/AddRss.tsx";
 
 function NavBar() {
-    return <nav><AddRss /></nav>;
+    return (<nav>
+        <AddRss />
+    </nav>);
 }
 
 export default NavBar;
