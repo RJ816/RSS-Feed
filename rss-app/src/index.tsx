@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Title from "./Title.tsx";
 import { App } from "./App.tsx";
-import NavBar from "./NavBar.tsx";
+import NavBar from "./navbar/NavBar.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(

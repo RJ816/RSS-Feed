@@ -1,7 +1,8 @@
 import React from "react";
+import AddRss from "./AddRss.tsx";
 
 function NavBar() {
-    return <div>TODO navbar</div>;
+    return <nav><AddRss /></nav>;
 }
 
 export default NavBar;
