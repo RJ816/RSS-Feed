@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import sendUrl from "/home/rj/rss-feed-aggregator/rss-app/network/http-request.js";
+import sendUrl from "../../../network/http-request.js";
 
 function Form() {
     const [url, setUrl] = useState("");
@@ -27,6 +27,7 @@ function Form() {
             name="url" id="url" 
             type="url" 
             placeholder="Enter RSS URL" 
+            autoComplete="off"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
         />
