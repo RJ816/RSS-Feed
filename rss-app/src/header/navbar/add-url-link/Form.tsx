@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import fs from "fs";
 
 function Form() {
     const [url, setUrl] = useState("");
@@ -9,7 +8,6 @@ function Form() {
             alert("Please enter a non-empty URL");
           } else {
             alert(`The url you entered was: ${url}`);
-            // Now you can proceed with any further actions, such as making a request to the server.
           }
       }
 
