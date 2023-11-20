@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import sendUrl from "../../../network/http-request.js";
+import useFetch from "../../../network/http-request.tsx";
 
 function Form() {
     const [url, setUrl] = useState("");
@@ -9,12 +9,12 @@ function Form() {
             alert("Please enter a non-empty URL");
           } else {
             try {
-                const data = await sendUrl(url); //check
-                if (data.ok) {
-                    alert(`URL successfully sent to the server: ${url}`);
-                } else {
-                    alert('Failed to send URL to the server');
-                }
+                const response = await useFetch(url); //check
+                // if (response.ok) {
+                //     alert(`URL successfully sent to the server: ${url}`);
+                // } else {
+                //     alert('Failed to send URL to the server');
+                // }
             } catch (error) {
                 console.error('Error sending URL to the server:', error);
             }
