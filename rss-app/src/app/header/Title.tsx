@@ -1,7 +1,5 @@
 import React from "react";
 
-function Title() {
+export default function Title() {
     return <h1>RSS Reader</h1>;
   }
-
-  export default Title;
