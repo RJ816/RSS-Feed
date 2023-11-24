@@ -1,6 +1,6 @@
-import AddRss from "./links/add-rss";
-import Home from "./links/home";
-import Settings from "./links/settings";
+import AddRss from "./add-rss";
+import Home from "./home";
+import Settings from "./settings";
 
 export default function Nav() {
     return <nav>
