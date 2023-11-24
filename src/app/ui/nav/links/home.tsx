@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
-    return <a>Home</a>
+    return <p>home</p>//<Link href="../rss-feed-aggregator/src/app/page.tsx">Home</Link>
 }
