@@ -1,4 +1,4 @@
-import Nav from "./(nav)/nav";
+import Nav from "./nav/nav";
 import Title from "./title";
 
 export default function Header() {
