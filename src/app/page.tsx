@@ -6,10 +6,11 @@ import Nav from "./ui/nav/nav";
 export default function Home() {
   return (
     <>
-    <Nav />
-    <Header />
-    <Main />
-    <Footer />
+      <Nav />
+      <Header />
+      <Main />
+      <Footer />
     </>
-  )
+  );
+
 }

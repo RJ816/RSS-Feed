@@ -1,3 +1,7 @@
+import Nav from "../ui/nav/nav";
+
 export default function Page() {
-    return <p>test</p>;
+    return (
+        <Nav />
+    );
 }

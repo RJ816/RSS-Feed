@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AddRss() {
-    return <a>Add RSS</a>;
+    return <Link href="/add-url">Add RSS</Link>;
 }
