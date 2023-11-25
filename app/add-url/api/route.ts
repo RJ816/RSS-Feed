@@ -1,13 +1,12 @@
-export async function POST() {
-    const res = await fetch("https://data.mongodb-api.com/...", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ time: new Date().toISOString() }),
-    })
-   
-    const data = await res.json()
-   
-    return Response.json(data)
+import storeUrl from "../lib/store-url";
+
+export async function POST(request: Request) {
+  // const formData = await request.formData();
+  // const url = formData.get("url") as string;
+  // storeUrl(url);
+  // return Response.json({ url})
+
+    const res = await request.json()
+    return Response.json({ res })
+  
   }

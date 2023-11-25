@@ -1,7 +1,10 @@
 "use server";
 
-export default async function SendUrl(formData: any) {
-    return formData;
+import storeUrl from "./store-url";
+
+export default async function SendUrl(formData: FormData) {
+    let url = formData.get("url") as string;
+    storeUrl(url);
     // mutate data
     // revalidate cache
   }
