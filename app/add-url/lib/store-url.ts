@@ -3,31 +3,27 @@ import fs from "fs";
 export default function storeUrl(url: string) {
     const filePath = "app/database/rss-urls.json";
 
-    // Read the existing content of the JSON file, or initialize an empty array
+    // Read the existing content of the JSON file
     const existingContent = fs.existsSync(filePath)
-        ? fs.readFileSync(filePath, 'utf-8')
-        : '[]';
+        ? fs.readFileSync(filePath, "utf-8")
+        : '{}';
 
-    // Parse the existing content into an array
-    const existingArray = JSON.parse(existingContent);
+    // Initialize existingObject as an empty object if the content is empty
+    const existingObject = existingContent ? JSON.parse(existingContent) : {};
 
-    // Convert the array to a Set for easy checking of uniqueness
-    const urlSet = new Set(existingArray);
+    // Create a Map from the object
+    const urlMap = new Map(Object.entries(existingObject));
 
-    // Check if the URL already exists in the Set
-    if (!urlSet.has(url)) {
-        // Add the new URL to the Set
-        urlSet.add(url);
+    // Add the new URL to the Map
+    urlMap.set(url, url);
 
-        // Convert the Set back to an array
-        const updatedArray = Array.from(urlSet);
+    // If you want to convert the Map back to an object and save it to the file:
+    const updatedObject = Object.fromEntries(urlMap.entries());
+    const updatedJsonString = JSON.stringify(updatedObject, null, 2);
 
-        // Convert the updated array to a JSON-formatted string
-        const updatedJsonString = JSON.stringify(updatedArray);
+    // Remove the leading newline from the JSON string
+    const trimmedJsonString = updatedJsonString.replace(/^\s*\n/, '');
 
-        // Write the updated JSON string back to the file
-        fs.writeFileSync(filePath, updatedJsonString);
-    } else {
-        console.log("URL already exists in the JSON file.");
-    }
+    fs.writeFileSync(filePath, trimmedJsonString);
 }
+
