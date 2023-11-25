@@ -6,7 +6,7 @@ export default function storeUrl(url: string) {
     // Read the existing content of the JSON file
     const existingContent = fs.existsSync(filePath)
         ? fs.readFileSync(filePath, "utf-8")
-        : '{}';
+        : "{}";
 
     // Initialize existingObject as an empty object if the content is empty
     const existingObject = existingContent ? JSON.parse(existingContent) : {};
@@ -22,7 +22,7 @@ export default function storeUrl(url: string) {
     const updatedJsonString = JSON.stringify(updatedObject, null, 2);
 
     // Remove the leading newline from the JSON string
-    const trimmedJsonString = updatedJsonString.replace(/^\s*\n/, '');
+    const trimmedJsonString = updatedJsonString.replace(/^\s*\n/, "");
 
     fs.writeFileSync(filePath, trimmedJsonString);
 }
