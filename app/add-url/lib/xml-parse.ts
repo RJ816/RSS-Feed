@@ -4,3 +4,5 @@ export default function XmlParse(text: string) {
     const items = xmlDoc.querySelectorAll("item");
     
 }
+
+//{url: [[title, link, pubDate?]]}
