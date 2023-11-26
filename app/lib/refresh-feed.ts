@@ -20,5 +20,5 @@ export default async function RefreshFeed() {
     const allArrays = Object.values(existingObject);
 
     // Now, allArrays is an array containing all the arrays from existingObject
-    console.log(allArrays);
+    //console.log(allArrays);
 }
