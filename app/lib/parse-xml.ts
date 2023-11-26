@@ -2,7 +2,7 @@ import Item from "./item-class";
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-export default function parseXml(text: string) {
+export default function parseXml(text: string, timestamp: string) {
     const dom = new JSDOM(text, { contentType: "text/xml" });
     const xmlDoc = dom.window.document;
 
@@ -21,5 +21,8 @@ export default function parseXml(text: string) {
         return new Item(title, link, pubDate, creator);
       });
 
-    return itemArray;
+    // Remove null items from the array
+    const filteredItemArray = itemArray.filter(item => item !== null);
+
+    return filteredItemArray;
 }

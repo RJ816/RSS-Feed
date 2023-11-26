@@ -15,7 +15,7 @@ export default async function addUpdates() {
 
         try {
             const rss = await fetchRss(key);
-            const rssItems = parseXml(rss);
+            const rssItems = parseXml(rss, timestamp);
             const updatedItems = [];
 
             for (const newItem of rssItems) {
@@ -32,7 +32,7 @@ export default async function addUpdates() {
             const updatedRssItems = currentRssItems[key] || [];
             const newRssItems = [...updatedRssItems, ...updatedItems];
 
-            storeJson(filePath, key, newRssItems);
+            storeJson(filePath, key, newRssItems); //TODO check if works
             
         } catch (error) {
             console.error(`Error fetching RSS for ${url}: ${error}`);
