@@ -13,8 +13,8 @@ export default async function SendUrl(formData: FormData) {
     let timestampPath = "app/database/rss-timestamp.json";
     let rssItems = parseXml(url, rss);
     let timestamp = getTimestamp();
-    console.log(timestamp);
     
     storeJson(urlPath, url, url);
     storeJson(rssPath, url, rssItems);
+    storeJson(timestampPath, url, timestamp);
   }
