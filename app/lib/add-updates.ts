@@ -15,12 +15,12 @@ export default async function addUpdates() {
 
         try {
             const rss = await fetchRss(key);
-            const rssItems = parseXml(rss, timestamp);
+            const rssItems = parseXml(rss);
             const updatedItems = [];
 
             for (const newItem of rssItems) {
                 // Check if the pubDate is present and is greater than the timestamp
-                if (!newItem.pubDate || new Date(newItem.pubDate) >= timestamp) {
+                if (!newItem.pubDate || new Date(newItem.pubDate) >= new Date(timestamp)) {
                 updatedItems.push(new Item(newItem.title, newItem.link, newItem.pubDate, newItem.creator));
                 } else {
                 // Stop adding items if we encounter an older pubDate
@@ -31,8 +31,8 @@ export default async function addUpdates() {
             // Append updatedItems to the respective rss-items.json value
             const updatedRssItems = currentRssItems[key] || [];
             const newRssItems = [...updatedRssItems, ...updatedItems];
-
-            storeJson(filePath, key, newRssItems); //TODO check if works
+            console.log(updatedItems);
+            //storeJson(filePath, key, newRssItems); //TODO check if works
             
         } catch (error) {
             console.error(`Error fetching RSS for ${url}: ${error}`);

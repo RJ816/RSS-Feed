@@ -2,7 +2,7 @@ import Item from "./item-class";
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-export default function parseXml(text: string, timestamp: string) {
+export default function parseXml(text: string) {
     const dom = new JSDOM(text, { contentType: "text/xml" });
     const xmlDoc = dom.window.document;
 
