@@ -2,7 +2,6 @@ import fs from "fs";
 import Item from "./item-class";
 
 export default function storeJson(filePath: string, key: string, value: string | Item[]) {
-    
 
     // Read the existing content of the JSON file
     const existingContent = fs.existsSync(filePath)
@@ -13,13 +12,13 @@ export default function storeJson(filePath: string, key: string, value: string |
     const existingObject = existingContent ? JSON.parse(existingContent) : {};
 
     // Create a Map from the object
-    const urlMap = new Map(Object.entries(existingObject));
+    const valueMap = new Map(Object.entries(existingObject));
 
     // Add the new URL to the Map
-    urlMap.set(key, value);
+    valueMap.set(key, value);
 
     // If you want to convert the Map back to an object and save it to the file:
-    const updatedObject = Object.fromEntries(urlMap.entries());
+    const updatedObject = Object.fromEntries(valueMap.entries());
     const updatedJsonString = JSON.stringify(updatedObject, null, 2);
 
     // Remove the leading newline from the JSON string
