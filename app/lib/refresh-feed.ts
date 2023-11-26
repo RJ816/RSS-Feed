@@ -4,6 +4,7 @@ import fs from "fs";
 
 export default async function RefreshFeed() {
 
+    
     const filePath = "app/database/rss-items.json";
     // Read the existing content of the JSON file
     const existingContent = fs.existsSync(filePath)
