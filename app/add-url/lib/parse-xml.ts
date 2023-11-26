@@ -16,14 +16,15 @@ export default function parseXml(url: string, text: string) {
         const pubDate = item.querySelector("pubDate")?.textContent || undefined;
 
         // Use namespace-aware query for dc:creator
-      const creator = item.querySelector("dc\\:creator, creator")?.textContent || "";
-      
+        const creator = item.querySelector("dc\\:creator, creator")?.textContent || "";
+
         return new Item(title, link, pubDate, creator);
       });
 
 
     // Structure the result as a JSON object with the url as the key
-    const jsonObj: Record<string, Item[]> = { [url]: itemArray };
+    //const jsonObj: Record<string, Item[]> = { [url]: itemArray };
     
-    return jsonObj;
+    //return jsonObj;
+    return itemArray;
 }

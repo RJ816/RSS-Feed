@@ -1,7 +1,7 @@
 import fs from "fs";
 import Item from "./item-class";
 
-export default function storeJson(filePath: string, key: string, value: string | Record<string, Item[]>) {
+export default function storeJson(filePath: string, key: string, value: string | Item[]) {
     
 
     // Read the existing content of the JSON file
