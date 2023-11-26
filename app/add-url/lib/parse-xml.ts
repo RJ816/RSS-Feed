@@ -7,7 +7,7 @@ export default function parseXml(url: string, text: string) {
     const xmlDoc = dom.window.document;
 
     // Define namespace mapping for queries
-    const namespaces = { 'dc': 'http://purl.org/dc/elements/1.1/' };
+    const namespaces = { "dc": "http://purl.org/dc/elements/1.1/" };
 
     const items = xmlDoc.querySelectorAll("item"); 
     const itemArray = Array.from(items).map((item: any) => {
@@ -21,10 +21,5 @@ export default function parseXml(url: string, text: string) {
         return new Item(title, link, pubDate, creator);
       });
 
-
-    // Structure the result as a JSON object with the url as the key
-    //const jsonObj: Record<string, Item[]> = { [url]: itemArray };
-    
-    //return jsonObj;
     return itemArray;
 }

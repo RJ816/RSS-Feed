@@ -9,9 +9,9 @@ export default async function SendUrl(formData: FormData) {
     const rss = await fetchRss(url);
     const urlPath = "app/database/rss-urls.json";
     const rssPath = "app/database/rss-items.json";
-    const jsonObj = parseXml(url, rss);
+    const rssItems = parseXml(url, rss);
     
     storeJson(urlPath, url, url);
-    storeJson(rssPath, url, jsonObj);
+    storeJson(rssPath, url, rssItems);
     
   }
