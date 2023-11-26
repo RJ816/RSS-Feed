@@ -1,4 +1,4 @@
-import SendUrl from "../lib/send-url";
+import SendUrl from "../../lib/send-url";
 
 export default function Form() {
     return (
