@@ -1,7 +1,7 @@
 import fs from "fs";
 
-export default function storeUrl(url: string) {
-    const filePath = "app/database/rss-urls.json";
+export default function storeJson(filePath: string, key: string, value: string) {
+    
 
     // Read the existing content of the JSON file
     const existingContent = fs.existsSync(filePath)
@@ -15,7 +15,7 @@ export default function storeUrl(url: string) {
     const urlMap = new Map(Object.entries(existingObject));
 
     // Add the new URL to the Map
-    urlMap.set(url, url);
+    urlMap.set(key, value);
 
     // If you want to convert the Map back to an object and save it to the file:
     const updatedObject = Object.fromEntries(urlMap.entries());
