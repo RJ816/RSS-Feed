@@ -12,7 +12,6 @@ export default function FeedContainer() {
             const items = await PopulateFeed();
             setFeedItems(items);
         }
-
         fetchData();
     }, []);
     
