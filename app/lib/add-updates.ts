@@ -1,17 +1,20 @@
+"use server";
+
 import fetchRss from "../api/fetch-rss";
+import getTimestamp from "./get-timestamp";
 import Item from "./item-class";
 import parseXml from "./parse-xml";
-import fs from "fs";
 import storeJson from "./store-json";
 
 export default async function addUpdates() {
-    const currentRssItems = require('app/database/rss-items.json');
-    const filePath = "app/database/rss-items.json";
-    const rssTimestamp = require('app/database/rss-timestamp.json');
+    const currentRssItems = require("app/database/rss-items.json");
+    const rssPath = "app/database/rss-items.json";
+    const rssTimestamp = require("app/database/rss-timestamp.json");
+    const timePath = "app/database/rss-timestamp.json";
 
     for (const url in rssTimestamp) {
         const key = url;
-        const timestamp = rssTimestamp[url];
+        let timestamp = rssTimestamp[url];
 
         try {
             const rss = await fetchRss(key);
@@ -31,14 +34,13 @@ export default async function addUpdates() {
             // Append updatedItems to the respective rss-items.json value
             const updatedRssItems = currentRssItems[key] || [];
             const newRssItems = [...updatedRssItems, ...updatedItems];
-            console.log(updatedItems);
-            //storeJson(filePath, key, newRssItems); //TODO check if works
+            storeJson(rssPath, key, newRssItems);
+            timestamp = getTimestamp();
+            storeJson(timePath, key, timestamp);
             
         } catch (error) {
             console.error(`Error fetching RSS for ${url}: ${error}`);
         }
     
     }
-
-  // TODO: Update the items based on your requirements.
 }

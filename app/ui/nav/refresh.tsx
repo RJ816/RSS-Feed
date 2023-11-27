@@ -1,7 +1,8 @@
-import Link from "next/link";
+"use client";
+
 import RefreshFeed from "../../lib/refresh-feed";
 
+
 export default function Refresh() {
-    RefreshFeed();
-    return <Link href="/">Refresh</Link>;
+    return <button onClick={ RefreshFeed }>Refresh</button>;
 }
