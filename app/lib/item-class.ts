@@ -10,4 +10,7 @@ export default class Item {
       this.pubDate = pubDate;
       this.creator = creator;
     }
+
+    getLink() {return this.link};
+    getTitle() {return this.title};
   }

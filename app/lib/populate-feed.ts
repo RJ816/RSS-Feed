@@ -1,6 +1,7 @@
 "use server";
 
 import fs from "fs";
+import Item from "./item-class";
 
 export default async function populateFeed() {
     const filePath = "app/database/rss-items.json";
@@ -10,11 +11,13 @@ export default async function populateFeed() {
         : "{}";
 
     // Initialize existingObject as an empty object if the content is empty
-    const existingObject = existingContent ? JSON.parse(existingContent) : {};
+    const existingObject: Record<string, Item[]> = existingContent ? JSON.parse(existingContent) : {};
 
     // Extract array values for each key-value pair
-    const allArrays = Object.values(existingObject);
+    const allArrays: Item[][] = Object.values(existingObject);
 
-    // Now, allArrays is an array containing all the arrays from existingObject
-    console.log(allArrays);
+    // Flatten the arrays into a single array of items
+    const allItems = ([] as Item[]).concat(...allArrays);
+    console.log(allItems);
+    return allItems;
 }
