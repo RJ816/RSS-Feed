@@ -11,6 +11,6 @@ export default class Item {
       this.creator = creator;
     }
 
-    getLink() {return this.link};
-    getTitle() {return this.title};
+    getLink() {return this.link;}
+    getTitle() {return this.title;}
   }

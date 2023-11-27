@@ -18,6 +18,6 @@ export default async function populateFeed() {
 
     // Flatten the arrays into a single array of items
     const allItems = ([] as Item[]).concat(...allArrays);
-    console.log(allItems);
+
     return allItems;
 }
