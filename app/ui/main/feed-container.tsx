@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import Item from '../../lib/item-class';
-import PopulateFeed from '../../lib/populate-feed';
+import React, { useEffect, useState } from "react";
+import Item from "../../lib/item-class";
+import PopulateFeed from "../../lib/populate-feed";
 
 export default function FeedContainer() {
     const [feedItems, setFeedItems] = useState<Item[]>([]);
