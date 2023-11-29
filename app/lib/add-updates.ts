@@ -21,6 +21,8 @@ export default async function addUpdates() {
             const rssItems = parseXml(rss);
             const updatedItems = [];
 
+            //console.log(rssItems);
+
             for (const newItem of rssItems) {
                 // Check if the pubDate is present and is greater than the timestamp
                 if (!newItem.pubDate || new Date(newItem.pubDate) >= new Date(timestamp)) {
@@ -37,6 +39,7 @@ export default async function addUpdates() {
             storeJson(rssPath, key, newRssItems);
             timestamp = getTimestamp();
             storeJson(timePath, key, timestamp);
+            
             
         } catch (error) {
             console.error(`Error fetching RSS for ${url}: ${error}`);

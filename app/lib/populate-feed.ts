@@ -13,8 +13,8 @@ export default async function populateFeed() {
     // Initialize existingObject as an empty object if the content is empty
     const existingObject: Record<string, Item[]> = existingContent ? JSON.parse(existingContent) : {};
 
-     // Flatten the arrays into a single array of items
-     const allItems = Object.values(existingObject).flat();
-
+    // Flatten the arrays into a single array of items
+    const allItems = Object.values(existingObject).flat();
+    //console.log(allItems); TODO
     return allItems;
 }
