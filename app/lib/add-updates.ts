@@ -15,14 +15,10 @@ export default async function addUpdates() {
     for (const url in rssTimestamp) {
         const key = url;
         let timestamp = rssTimestamp[url];
-
         try {
             const rss = await fetchRss(key);
-            const rssItems = parseXml(rss);
+            const rssItems = parseXml(rss,timestamp); //TODO
             const updatedItems = [];
-
-            //console.log(rssItems);
-
             for (const newItem of rssItems) {
                 // Check if the pubDate is present and is greater than the timestamp
                 if (!newItem.pubDate || new Date(newItem.pubDate) >= new Date(timestamp)) {

@@ -1,9 +1,16 @@
-export default async function fetchRss(url : string) {
-    const res = await fetch(url);
+export default async function fetchRss(url: string) {
+  const noCacheHeaders = new Headers({
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    'Pragma': 'no-cache',
+    'Expires': '0',
+  });
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch data");
-    }
+  const res = await fetch(url, { headers: noCacheHeaders });
 
-    return res.text();
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
   }
+
+  return res.text();
+}
+  

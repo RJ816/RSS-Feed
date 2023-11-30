@@ -1,68 +1,34 @@
 {
   "https://calendar.gatech.edu/taxonomy/term/13/feed": [
     {
+      "title": "Pre-Health Virtual Drop-Ins",
+      "link": "http://calendar.gatech.edu/event/2023/12/01/pre-health-virtual-drop-ins",
+      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
+      "creator": "Admin"
+    },
+    {
+      "title": "Pre-Health Virtual Drop-Ins",
+      "link": "http://calendar.gatech.edu/event/2023/11/30/pre-health-virtual-drop-ins",
+      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
+      "creator": "Admin"
+    },
+    {
+      "title": "Pre-Health Virtual Drop-Ins",
+      "link": "http://calendar.gatech.edu/event/2023/11/28/pre-health-virtual-drop-ins",
+      "pubDate": "Mon, 27 Nov 2023 14:23:12 +0000",
+      "creator": "Admin"
+    },
+    {
+      "title": "Pre-Health Virtual Drop-Ins",
+      "link": "http://calendar.gatech.edu/event/2023/11/27/pre-health-virtual-drop-ins",
+      "pubDate": "Mon, 27 Nov 2023 14:23:12 +0000",
+      "creator": "Admin"
+    },
+    {
       "title": "Fall 2023 I2P Showcase",
       "link": "http://calendar.gatech.edu/event/2023/11/30/fall-2023-i2p-showcase",
       "pubDate": "Wed, 22 Nov 2023 20:08:12 +0000",
       "creator": "Admin"
-    },
-    {
-      "title": "Using Interstride to Optimize your Job and Internship Search for International Students (presented by Interstride)",
-      "link": "http://calendar.gatech.edu/event/2023/12/20/using-interstride-optimize-your-job-and-internship-search-international-students",
-      "pubDate": "Wed, 15 Nov 2023 20:23:12 +0000",
-      "creator": "Admin"
-    }
-  ],
-  "https://blogs.microsoft.com/feed/": [
-    {
-      "title": "A statement from Microsoft Chairman and CEO Satya Nadella",
-      "link": "https://blogs.microsoft.com/blog/2023/11/21/a-statement-from-microsoft-chairman-and-ceo-satya-nadella/",
-      "pubDate": "Tue, 21 Nov 2023 18:15:52 +0000",
-      "creator": "Microsoft Corporate Blogs"
-    },
-    {
-      "title": "Microsoft Ignite 2023: AI transformation and the technology driving change",
-      "link": "https://blogs.microsoft.com/blog/2023/11/15/microsoft-ignite-2023-ai-transformation-and-the-technology-driving-change/",
-      "pubDate": "Wed, 15 Nov 2023 16:00:02 +0000",
-      "creator": "Frank X. Shaw"
-    }
-  ],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [
-    {
-      "title": "Chris Hare: Find just three people. [Development] [Career Notes]",
-      "link": "https://thecyberwire.com/podcasts/career-notes/177/notes",
-      "pubDate": "Sun, 26 Nov 2023 08:00:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Hacktivists assemble to attack Pennsylvania water utility.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1954/notes",
-      "pubDate": "Mon, 27 Nov 2023 21:40:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Hospitals on the hotplate after ransomware attacks.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1955/notes",
-      "pubDate": "Tue, 28 Nov 2023 21:10:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Hospitals on the hotplate after ransomware attacks.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1955/notes",
-      "pubDate": "Tue, 28 Nov 2023 21:10:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Hacktivists assemble to attack Pennsylvania water utility.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1954/notes",
-      "pubDate": "Mon, 27 Nov 2023 21:40:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Chris Hare: Find just three people. [Development] [Career Notes]",
-      "link": "https://thecyberwire.com/podcasts/career-notes/177/notes",
-      "pubDate": "Sun, 26 Nov 2023 08:00:00 -0000",
-      "creator": ""
     }
   ]
 }

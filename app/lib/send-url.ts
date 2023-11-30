@@ -11,6 +11,8 @@ export default async function SendUrl(formData: FormData) {
     const rssPath = "app/database/rss-items.json";
     const timestampPath = "app/database/rss-timestamp.json";
     const timestamp = getTimestamp();
+    const feedCutoff = new Date(timestamp);
+    feedCutoff = 
     let rssItems = parseXml(rss, timestamp);
     
     storeJson(rssPath, url, rssItems);
