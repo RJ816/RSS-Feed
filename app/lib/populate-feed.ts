@@ -13,8 +13,14 @@ export default async function populateFeed() {
     // Initialize existingObject as an empty object if the content is empty
     const existingObject: Record<string, Item[]> = existingContent ? JSON.parse(existingContent) : {};
 
-    // Flatten the arrays into a single array of items
-    const allItems = Object.values(existingObject).flat();
-    //console.log(allItems); TODO
+    // Create a Map to store URLs as keys and their respective items as values
+    const allItems = new Map<string, Item[]>();
+
+    // Iterate through each URL and its items in the existingObject
+    for (const [url, items] of Object.entries(existingObject)) {
+        allItems.set(url, items);
+    }
+
     return allItems;
 }
+
