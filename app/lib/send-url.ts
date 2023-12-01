@@ -4,6 +4,7 @@ import fetchRss from "../api/fetch-rss";
 import storeJson from "./store-json";
 import parseXml from "./parse-xml";
 import getTimestamp from "./get-timestamp";
+import FeedCutoff from "./feed-cutoff";
 
 export default async function SendUrl(formData: FormData) {
     const url = formData.get("url") as string;
@@ -11,9 +12,9 @@ export default async function SendUrl(formData: FormData) {
     const rssPath = "app/database/rss-items.json";
     const timestampPath = "app/database/rss-timestamp.json";
     const timestamp = getTimestamp();
-    const feedCutoff = new Date(timestamp);
-    feedCutoff = 
-    let rssItems = parseXml(rss, timestamp);
+    const feedCutoff = FeedCutoff();
+    console.log(feedCutoff);
+    let rssItems = parseXml(rss, feedCutoff);
     
     storeJson(rssPath, url, rssItems);
     storeJson(timestampPath, url, timestamp);
