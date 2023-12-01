@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import FeedContainer from "./feed-container";
 import Refresh from "./refresh";
@@ -7,13 +8,14 @@ import Item from "../../lib/item-class";
 import populateFeed from "../../lib/populate-feed"; 
 
 export default function Main() {
-  const [feed, setFeed] = useState<Map<string, Item[]> | undefined>(new Map());
+  const [feedMap, setFeedMap] = useState<Map<string, Item[]> | undefined>(new Map());
 
   useEffect(() => {
     const fetchInitialFeed = async () => {
       try {
         const initialFeedData = await populateFeed();
-        setFeed(initialFeedData);
+        // Assuming populateFeed returns a Map
+        setFeedMap(initialFeedData);
       } catch (error) {
         console.error("Error fetching initial feed data:", error);
       }
@@ -24,10 +26,9 @@ export default function Main() {
 
   return (
     <main>
-      <FeedContext.Provider value={{ feed, setFeed }}>
+      <FeedContext.Provider value={{ feedMap, setFeedMap }}>
         <Refresh />
-        {/* Adjust FeedContainer to handle Map<string, Item[]> */}
-        <FeedContainer feed={feed} />
+        <FeedContainer feedMap={feedMap} />
       </FeedContext.Provider>
     </main>
   );
