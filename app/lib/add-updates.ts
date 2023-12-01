@@ -20,23 +20,14 @@ export default async function addUpdates() {
             const rssItems = parseXml(rss,timestamp); //TODO
             const updatedItems = [];
             for (const newItem of rssItems) {
-                // Check if the pubDate is present and is greater than the timestamp
-                if (!newItem.pubDate || new Date(newItem.pubDate) >= new Date(timestamp)) {
                 updatedItems.push(new Item(newItem.title, newItem.link, newItem.pubDate, newItem.creator));
-                } else {
-                // Stop adding items if we encounter an older pubDate
-                break;
-                }
             }
-            
             // Append updatedItems to the respective rss-items.json value
             const updatedRssItems = currentRssItems[key] || [];
             const newRssItems = [...updatedRssItems, ...updatedItems];
             storeJson(rssPath, key, newRssItems);
             timestamp = getTimestamp();
             storeJson(timePath, key, timestamp);
-            
-            
         } catch (error) {
             console.error(`Error fetching RSS for ${url}: ${error}`);
         }

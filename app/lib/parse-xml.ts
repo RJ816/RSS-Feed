@@ -6,9 +6,6 @@ export default function parseXml(text: string, timestamp: string) {
     const dom = new JSDOM(text, { contentType: "text/xml" });
     const xmlDoc = dom.window.document;
 
-    // Define namespace mapping for queries
-    const namespaces = { "dc": "http://purl.org/dc/elements/1.1/" };
-
     const items = xmlDoc.querySelectorAll("item"); 
     const itemArray = [];
 

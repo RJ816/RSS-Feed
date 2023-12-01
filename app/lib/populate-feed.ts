@@ -9,7 +9,7 @@ export default async function populateFeed() {
     const existingContent = fs.existsSync(filePath)
         ? fs.readFileSync(filePath, "utf-8")
         : "{}";
-
+        
     // Initialize existingObject as an empty object if the content is empty
     const existingObject: Record<string, Item[]> = existingContent ? JSON.parse(existingContent) : {};
 
