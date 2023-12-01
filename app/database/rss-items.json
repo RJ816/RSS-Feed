@@ -1,30 +1,4 @@
 {
-  "https://calendar.gatech.edu/taxonomy/term/13/feed": [
-    {
-      "title": "Pre-Health Virtual Drop-Ins",
-      "link": "http://calendar.gatech.edu/event/2023/12/01/pre-health-virtual-drop-ins",
-      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
-      "creator": "Admin"
-    },
-    {
-      "title": "Pre-Health Virtual Drop-Ins",
-      "link": "http://calendar.gatech.edu/event/2023/11/30/pre-health-virtual-drop-ins",
-      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
-      "creator": "Admin"
-    }
-  ],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [
-    {
-      "title": "Widespread exploitation of severe vulnerability in ownCloud.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1957/notes",
-      "pubDate": "Thu, 30 Nov 2023 21:10:00 -0000",
-      "creator": ""
-    },
-    {
-      "title": "Major crackdown on international cybersecurity.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1956/notes",
-      "pubDate": "Wed, 29 Nov 2023 21:10:00 -0000",
-      "creator": ""
-    }
-  ]
+  "https://calendar.gatech.edu/taxonomy/term/13/feed": [],
+  "https://feeds.megaphone.fm/cyberwire-daily-podcast": []
 }

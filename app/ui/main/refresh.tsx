@@ -10,7 +10,7 @@ export default function Refresh() {
     try {
       setIsRefreshing(true);
       const updatedFeed = await RefreshFeed();
-      feedContext?.setFeed(updatedFeed);
+      feedContext?.setFeedMap(updatedFeed);
     } catch (error) {
       console.error("Error refreshing feed:", error);
     } finally {

@@ -28,7 +28,7 @@ export default function Main() {
     <main>
       <FeedContext.Provider value={{ feedMap, setFeedMap }}>
         <Refresh />
-        <FeedContainer feedMap={feedMap} />
+        <FeedContainer feedMap={feedMap} setFeedMap={setFeedMap} />
       </FeedContext.Provider>
     </main>
   );
