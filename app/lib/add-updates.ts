@@ -2,8 +2,8 @@
 
 import fetchRss from "../api/fetch-rss";
 import getTimestamp from "./get-timestamp";
-import Item from "./item-class";
-import parseXml from "./parse-xml";
+import Item from "./feed-item-class";
+import parseXml from "./parse-xml/parse-xml";
 import storeJson from "./store-json";
 
 export default async function addUpdates() {

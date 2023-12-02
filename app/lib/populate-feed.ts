@@ -1,7 +1,7 @@
 "use server";
 
 import fs from "fs";
-import Item from "./item-class";
+import Item from "./feed-item-class";
 
 export default async function populateFeed() {
     const filePath = "app/database/rss-items.json";

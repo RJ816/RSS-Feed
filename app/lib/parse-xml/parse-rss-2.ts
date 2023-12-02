@@ -1,20 +1,16 @@
-import Item from "./item-class";
+import Item from "../feed-item-class";
 const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
 
-export default function parseXml(text: string, timestamp: string) {
-    const dom = new JSDOM(text, { contentType: "text/xml" });
-    const xmlDoc = dom.window.document;
-
-    const items = xmlDoc.querySelectorAll("item"); 
+export default function parseRssVersion2(xmlDoc:any, timestamp: string) {
     const itemArray = [];
-
+    const items = xmlDoc.querySelectorAll("item"); 
+    
     for (const item of items) {
         const pubDate = item.querySelector("pubDate")?.textContent || undefined;
 
         // Stop parsing if pubDate is older than the given timestamp
         if (pubDate && new Date(pubDate) < new Date(timestamp)) {
-            break;
+            continue;
         }
 
         const title = item.querySelector("title")?.textContent || "";

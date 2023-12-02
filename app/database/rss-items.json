@@ -1,3 +1,19 @@
 {
-  "https://calendar.gatech.edu/taxonomy/term/13/feed": []
+  "https://nostarch.com/feeds/newbooks.xml": [
+    {
+      "title": "Evading EDR",
+      "link": "https://nostarch.com/evading-edr",
+      "pubDate": "Mon, 06 Mar 2023 15:41:41 +0000",
+      "creator": "sarah.devos"
+    }
+  ],
+  "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ": [],
+  "https://calendar.gatech.edu/taxonomy/term/13/feed": [
+    {
+      "title": "Pre-Health Virtual Drop-Ins",
+      "link": "http://calendar.gatech.edu/event/2023/12/01/pre-health-virtual-drop-ins",
+      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
+      "creator": "Admin"
+    }
+  ]
 }

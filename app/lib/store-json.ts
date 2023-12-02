@@ -1,5 +1,5 @@
 import fs from "fs";
-import Item from "./item-class";
+import Item from "./feed-item-class";
 
 export default function storeJson(filePath: string, key: string, value: string | Item[]) {
 

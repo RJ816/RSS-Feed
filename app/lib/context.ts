@@ -1,5 +1,5 @@
 import { createContext, Dispatch, SetStateAction } from "react";
-import Item from "./item-class";
+import Item from "./feed-item-class";
 
 interface FeedContextType {
   feedMap: Map<string, Item[]> | undefined;
