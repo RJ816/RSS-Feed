@@ -1,19 +1,58 @@
 {
-  "https://nostarch.com/feeds/newbooks.xml": [
+  "https://nostarch.com/feeds/newbooks.xml": [],
+  "https://calendar.gatech.edu/taxonomy/term/13/feed": [],
+  "https://blogs.windows.com/windows-insider/feed/": [
     {
-      "title": "Evading EDR",
-      "link": "https://nostarch.com/evading-edr",
-      "pubDate": "Mon, 06 Mar 2023 15:41:41 +0000",
-      "creator": "sarah.devos"
+      "title": "Announcing Windows 11 Insider Preview Build 22635.2776 (Beta Channel)",
+      "link": "https://blogs.windows.com/windows-insider/2023/11/28/announcing-windows-11-insider-preview-build-22635-2776-beta-channel/",
+      "pubDate": "Tue, 28 Nov 2023 18:03:39 +0000",
+      "creator": "Brandon LeBlanc"
+    },
+    {
+      "title": "Releasing Windows 10 Build 19045.3757 to Release Preview Channel",
+      "link": "https://blogs.windows.com/windows-insider/2023/11/20/releasing-windows-10-build-19045-3757-to-release-preview-channel/",
+      "pubDate": "Mon, 20 Nov 2023 22:03:47 +0000",
+      "creator": "Brandon LeBlanc"
     }
   ],
-  "https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ": [],
-  "https://calendar.gatech.edu/taxonomy/term/13/feed": [
+  "https://www.w3.org/Style/CSS/Overview.atom": [
     {
-      "title": "Pre-Health Virtual Drop-Ins",
-      "link": "http://calendar.gatech.edu/event/2023/12/01/pre-health-virtual-drop-ins",
-      "pubDate": "Mon, 27 Nov 2023 15:09:20 +0000",
-      "creator": "Admin"
+      "title": "New Candidate Recommendation: CSS View Transitions Level 1. …",
+      "link": "https://www.w3.org/Style/CSS/Overview.en.html#n2023-09-05",
+      "pubDate": "2023-09-05T00:00:00Z"
+    }
+  ],
+  "http://feeds.rssboard.org/rssboard": [],
+  "https://www.freecodecamp.org/news/rss/": [
+    {
+      "title": "\n                     SVG Tutorial – How to Code Images with 7 Examples \n                ",
+      "link": "https://www.freecodecamp.org/news/svg-tutorial-learn-to-code-images/",
+      "pubDate": "Fri, 01 Dec 2023 14:13:00 -0500",
+      "creator": "\n                     Hunor Márton Borbély \n                "
+    },
+    {
+      "title": "\n                     How to Use JavaScript Arrow Functions – Explained in Detail \n                ",
+      "link": "https://www.freecodecamp.org/news/javascript-arrow-functions-in-depth/",
+      "pubDate": "Thu, 30 Nov 2023 14:26:49 -0500",
+      "creator": "\n                     Nathan Sebhastian \n                "
+    },
+    {
+      "title": "\n                     How to Create HTML Accordion Elements With and Without JavaScript \n                ",
+      "link": "https://www.freecodecamp.org/news/create-html-accordions-with-and-without-javascript/",
+      "pubDate": "Thu, 30 Nov 2023 14:10:31 -0500",
+      "creator": "\n                     Eamonn Cottrell \n                "
+    },
+    {
+      "title": "\n                     API Documentation Best Practices Course \n                ",
+      "link": "https://www.freecodecamp.org/news/api-documentation-best-practices-course/",
+      "pubDate": "Thu, 30 Nov 2023 11:17:38 -0500",
+      "creator": "\n                     Beau Carnes \n                "
+    },
+    {
+      "title": "\n                     How to Use Logic in JavaScript – Operators, Conditions, Truthy/Falsy, and More \n                ",
+      "link": "https://www.freecodecamp.org/news/logic-in-javascript/",
+      "pubDate": "Wed, 29 Nov 2023 16:50:16 -0500",
+      "creator": "\n                     Joan Ayebola \n                "
     }
   ]
 }

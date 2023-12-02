@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "../../lib/feed-item-class";
+import Item from "../../lib/item-class";
 import { updateRssItemsJson } from "../../lib/remove-item"; // Import your function
 
 interface FeedContainerProps {

@@ -1,4 +1,4 @@
-import Item from "../feed-item-class";
+import Item from "../item-class";
 const jsdom = require("jsdom");
 
 export default function parseRssVersion2(xmlDoc:any, timestamp: string) {

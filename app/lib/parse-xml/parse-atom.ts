@@ -1,23 +1,24 @@
-import Item from "../feed-item-class";
+import Item from "../item-class";
 const jsdom = require("jsdom");
 
 export default function parseAtom(xmlDoc:any, timestamp: string) {
-    const itemArray = [];
-    const items = xmlDoc.querySelectorAll("entry"); 
+    const entryArray = [];
+    const entries = xmlDoc.querySelectorAll("entry"); 
     
-    for (const item of items) {
-        const pubDate = item.querySelector("published")?.textContent || undefined;
+    for (const entry of entries) {
+        const pubDate = entry.querySelector("published")?.textContent || entry.querySelector("updated")?.textContent || undefined;
 
         // Stop parsing if pubDate is older than the given timestamp
         if (pubDate && new Date(pubDate) < new Date(timestamp)) {
             continue;
         }
 
-        const title = item.querySelector("title")?.textContent || "";
-        const link = item.querySelector("link")?.textContent || "";
+        const title = entry.querySelector("title")?.textContent || "";
+        const linkElement = entry.querySelector("link");
+        const link = linkElement?.getAttribute("href") || linkElement?.textContent || "";
 
-        itemArray.push(new Item(title, link, pubDate));
+        entryArray.push(new Item(title, link, pubDate));
     }
 
-    return itemArray;
+    return entryArray;
 }

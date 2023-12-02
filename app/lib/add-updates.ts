@@ -2,7 +2,7 @@
 
 import fetchRss from "../api/fetch-rss";
 import getTimestamp from "./get-timestamp";
-import Item from "./feed-item-class";
+import Item from "./item-class";
 import parseXml from "./parse-xml/parse-xml";
 import storeJson from "./store-json";
 
@@ -17,7 +17,7 @@ export default async function addUpdates() {
         let timestamp = rssTimestamp[url];
         try {
             const rss = await fetchRss(key);
-            const rssItems = parseXml(rss,timestamp); //TODO
+            const rssItems = parseXml(rss,timestamp);
             const updatedItems = [];
             for (const newItem of rssItems) {
                 updatedItems.push(new Item(newItem.title, newItem.link, newItem.pubDate, newItem.creator));
