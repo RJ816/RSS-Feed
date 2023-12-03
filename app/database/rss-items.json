@@ -5,5 +5,94 @@
   "https://www.w3.org/Style/CSS/Overview.atom": [],
   "http://feeds.rssboard.org/rssboard": [],
   "https://www.freecodecamp.org/news/rss/": [],
-  "https://blog.whatwg.org/feed": []
+  "https://blog.whatwg.org/feed": [],
+  "https://apnews.com/hub/ap-top-news.rss": [],
+  "https://developer.mozilla.org/en-US/blog/rss.xml": [
+    {
+      "title": "Developer essentials: JavaScript console methods",
+      "link": "https://developer.mozilla.org/en-US/blog/learn-javascript-console-methods/",
+      "pubDate": "Thu, 30 Nov 2023 00:00:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Getting started with CSS container queries",
+      "link": "https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/",
+      "pubDate": "Thu, 16 Nov 2023 00:00:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Deploying Node.js applications with PM2 on Vultr",
+      "link": "https://developer.mozilla.org/en-US/blog/deploying-node-js-applications-with-pm2-on-vultr/",
+      "pubDate": "Wed, 08 Nov 2023 00:00:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "VS Code: Tips and tricks for beginners",
+      "link": "https://developer.mozilla.org/en-US/blog/vs-code-tips-tricks/",
+      "pubDate": "Tue, 07 Nov 2023 00:00:00 GMT",
+      "creator": ""
+    }
+  ],
+  "https://stackoverflow.blog/feed": [
+    {
+      "title": "Will developers return to hostile offices?",
+      "link": "https://stackoverflow.blog/2023/12/01/will-developers-return-to-hostile-offices/",
+      "pubDate": "Fri, 01 Dec 2023 08:40:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "How to scale a business-ready AI platform with watsonx: Q&A with IBM",
+      "link": "https://stackoverflow.blog/2023/11/29/how-to-scale-a-business-ready-ai-platform-with-watsonx-q-and-a-with-ibm/",
+      "pubDate": "Wed, 29 Nov 2023 15:00:00 GMT",
+      "creator": "Ben Popper, Ryan Donovan"
+    },
+    {
+      "title": "Can GenAI 10X developer productivity?",
+      "link": "https://stackoverflow.blog/2023/11/28/can-genai-10x-developer-productivity/",
+      "pubDate": "Tue, 28 Nov 2023 08:40:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "Are remote workers more productive? That’s the wrong question.",
+      "link": "https://stackoverflow.blog/2023/11/27/are-remote-workers-more-productive-that-s-the-wrong-question/",
+      "pubDate": "Mon, 27 Nov 2023 15:41:11 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "Cloudflare Workers have a new skill: AI inference-as-a-service",
+      "link": "https://stackoverflow.blog/2023/11/21/cloudflare-workers-have-a-new-skill-ai-inference-as-a-service/",
+      "pubDate": "Tue, 21 Nov 2023 12:24:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "The AI assistant trained on your company’s data",
+      "link": "https://stackoverflow.blog/2023/11/17/the-ai-assistant-trained-on-your-company-s-data/",
+      "pubDate": "Fri, 17 Nov 2023 08:40:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "Trust as a service for validating OSS dependencies",
+      "link": "https://stackoverflow.blog/2023/11/14/trust-as-a-service-for-validating-oss-dependencies/",
+      "pubDate": "Tue, 14 Nov 2023 08:40:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "How the co-creator of Kubernetes is helping developers build safer software",
+      "link": "https://stackoverflow.blog/2023/11/10/how-the-cocreator-of-kubernetes-is-helping-developers-build-safer-software/",
+      "pubDate": "Fri, 10 Nov 2023 20:40:00 GMT",
+      "creator": "Eira May"
+    },
+    {
+      "title": "An intuitive introduction to text embeddings",
+      "link": "https://stackoverflow.blog/2023/11/09/an-intuitive-introduction-to-text-embeddings/",
+      "pubDate": "Thu, 09 Nov 2023 20:22:34 GMT",
+      "creator": "Kevin Henner"
+    },
+    {
+      "title": "The product approach to open source communities",
+      "link": "https://stackoverflow.blog/2023/11/08/the-product-approach-to-open-source-communities/",
+      "pubDate": "Wed, 08 Nov 2023 14:47:00 GMT",
+      "creator": "Mike Donovan"
+    }
+  ]
 }
