@@ -9,23 +9,9 @@
   "https://apnews.com/hub/ap-top-news.rss": [],
   "https://developer.mozilla.org/en-US/blog/rss.xml": [],
   "https://stackoverflow.blog/feed": [],
-  "https://feed.syntax.fm/": [
-    {
-      "title": "701: A11y Treats - Labels & Roles",
-      "link": "https://syntax.fm/701",
-      "pubDate": "Mon, 04 Dec 2023 11:00:00 +0000",
-      "creator": ""
-    }
-  ],
+  "https://feed.syntax.fm/": [],
   "https://feeds.megaphone.fm/darknetdiaries": [],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [
-    {
-      "title": "Iran behind attacks on PLCs.",
-      "link": "https://thecyberwire.com/podcasts/daily-podcast/1959/notes",
-      "pubDate": "Mon, 04 Dec 2023 21:10:00 -0000",
-      "creator": ""
-    }
-  ],
+  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [],
   "https://insidejava.libsyn.com/rss": [],
   "https://softskills.audio/feed.xml": [],
   "https://feeds.buzzsprout.com/2105116.rss": [],
