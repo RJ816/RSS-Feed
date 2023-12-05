@@ -16,20 +16,7 @@
   "https://softskills.audio/feed.xml": [],
   "https://feeds.buzzsprout.com/2105116.rss": [],
   "https://feeds.simplecast.com/dLRotFGk": [],
-  "https://changelog.com/podcast/feed": [
-    {
-      "title": "The state of the 2023 tech market",
-      "link": "https://changelog.com/friends/23",
-      "pubDate": "Fri, 01 Dec 2023 19:00:00 +0000",
-      "creator": "Changelog Media"
-    },
-    {
-      "title": "Leaked GPT prompts & Firefox on the brink",
-      "link": "https://changelog.com/news/73",
-      "pubDate": "Mon, 04 Dec 2023 21:15:00 +0000",
-      "creator": "Changelog Media"
-    }
-  ],
+  "https://changelog.com/podcast/feed": [],
   "https://changelog.com/jsparty/feed": [],
   "https://talkpython.fm/episodes/rss": [],
   "https://feeds.redcircle.com/597cfd00-b29a-49c6-9622-03c8decfc35f": [],
