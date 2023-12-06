@@ -1,6 +1,5 @@
 {
   "https://nostarch.com/feeds/newbooks.xml": [],
-  "https://calendar.gatech.edu/taxonomy/term/13/feed": [],
   "https://blogs.windows.com/windows-insider/feed/": [],
   "https://www.w3.org/Style/CSS/Overview.atom": [],
   "http://feeds.rssboard.org/rssboard": [],
@@ -11,7 +10,14 @@
   "https://stackoverflow.blog/feed": [],
   "https://feed.syntax.fm/": [],
   "https://feeds.megaphone.fm/darknetdiaries": [],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [],
+  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [
+    {
+      "title": "Sleeper malware denied at Sellafield nuclear site.",
+      "link": "https://thecyberwire.com/podcasts/daily-podcast/1960/notes",
+      "pubDate": "Tue, 05 Dec 2023 21:10:00 -0000",
+      "creator": ""
+    }
+  ],
   "https://insidejava.libsyn.com/rss": [],
   "https://softskills.audio/feed.xml": [],
   "https://feeds.buzzsprout.com/2105116.rss": [],
