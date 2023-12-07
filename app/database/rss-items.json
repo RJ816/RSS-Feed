@@ -40,5 +40,6 @@
   "https://newsroom.aboutrobinhood.com/feed/": [],
   "https://newsroom.paypal-corp.com/news?pagetemplate=rss": [],
   "https://github.blog/feed/": [],
-  "https://blogs.oracle.com/developers/rss": []
+  "https://blogs.oracle.com/developers/rss": [],
+  "https://github.com/apache/maven/releases.atom": []
 }
