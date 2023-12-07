@@ -39,5 +39,6 @@
   "https://eslint.org/feed.xml": [],
   "https://newsroom.aboutrobinhood.com/feed/": [],
   "https://newsroom.paypal-corp.com/news?pagetemplate=rss": [],
-  "https://github.blog/feed/": []
+  "https://github.blog/feed/": [],
+  "https://blogs.oracle.com/developers/rss": []
 }
