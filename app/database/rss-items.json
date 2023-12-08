@@ -10,13 +10,27 @@
   "https://stackoverflow.blog/feed": [],
   "https://feed.syntax.fm/": [],
   "https://feeds.megaphone.fm/darknetdiaries": [],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [],
+  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [
+    {
+      "title": "New vulnerability packs a punch.",
+      "link": "https://thecyberwire.com/podcasts/daily-podcast/1962/notes",
+      "pubDate": "Thu, 07 Dec 2023 21:20:00 -0000",
+      "creator": ""
+    }
+  ],
   "https://insidejava.libsyn.com/rss": [],
   "https://softskills.audio/feed.xml": [],
   "https://feeds.buzzsprout.com/2105116.rss": [],
   "https://feeds.simplecast.com/dLRotFGk": [],
   "https://changelog.com/podcast/feed": [],
-  "https://changelog.com/jsparty/feed": [],
+  "https://changelog.com/jsparty/feed": [
+    {
+      "title": "From WebGL to WebGPU",
+      "link": "https://changelog.com/jsparty/304",
+      "pubDate": "Thu, 07 Dec 2023 17:40:00 +0000",
+      "creator": "Changelog Media"
+    }
+  ],
   "https://talkpython.fm/episodes/rss": [],
   "https://feeds.redcircle.com/597cfd00-b29a-49c6-9622-03c8decfc35f": [],
   "https://softwareengineeringdaily.com/category/podcast/feed/": [],
