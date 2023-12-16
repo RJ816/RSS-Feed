@@ -5,7 +5,8 @@ export default async function fetchRss(url: string) {
     'Expires': '0',
   });
 
-  const res = await fetch(url, { headers: noCacheHeaders });
+  const noCacheUrl = `${url}?_=${new Date().getTime()}`;
+  const res = await fetch(noCacheUrl, { headers: noCacheHeaders });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -13,4 +14,3 @@ export default async function fetchRss(url: string) {
 
   return res.text();
 }
-  
