@@ -1,32 +1,65 @@
 {
   "https://blogs.windows.com/windows-insider/feed/": [],
-  "http://feeds.rssboard.org/rssboard": [],
-  "https://www.freecodecamp.org/news/rss/": [],
-  "https://blog.whatwg.org/feed": [],
-  "https://apnews.com/hub/ap-top-news.rss": [],
-  "https://developer.mozilla.org/en-US/blog/rss.xml": [],
-  "https://feed.syntax.fm/": [],
-  "https://feeds.megaphone.fm/darknetdiaries": [],
-  "https://feeds.megaphone.fm/cyberwire-daily-podcast": [],
-  "https://insidejava.libsyn.com/rss": [],
-  "https://softskills.audio/feed.xml": [],
-  "https://changelog.com/podcast/feed": [],
-  "https://changelog.com/jsparty/feed": [],
-  "https://softwareengineeringdaily.com/feed/": [],
-  "https://feeds.redcircle.com/a4faed6e-afe0-4a65-b4e7-de790ee67d4b": [],
-  "https://code.visualstudio.com/feed.xml": [],
-  "https://www.debian.org/News/news": [],
-  "https://www.kernel.org/feeds/kdist.xml": [],
-  "https://blogs.oracle.com/java/rss": [],
-  "https://devblogs.microsoft.com/typescript/feed/": [],
-  "https://nodejs.org/en/feed/blog.xml": [],
-  "https://git.github.io/feed.xml": [],
-  "https://nextjs.org/feed.xml": [],
-  "https://eslint.org/feed.xml": [],
-  "https://newsroom.aboutrobinhood.com/feed/": [],
-  "https://newsroom.paypal-corp.com/news?pagetemplate=rss": [],
-  "https://github.blog/feed/": [],
-  "https://blogs.oracle.com/developers/rss": [],
-  "https://github.com/apache/maven/releases.atom": [],
-  "https://blogs.oracle.com/mysql/rss": []
+  "https://www.freecodecamp.org/news/rss/": [
+    {
+      "title": "\n                     How to Add a Table of Contents to Your Article on Ghost \n                ",
+      "link": "https://www.freecodecamp.org/news/how-to-add-a-table-of-contents-to-your-article-on-ghost/",
+      "pubDate": "Fri, 01 Dec 2023 14:47:28 -0500",
+      "creator": "\n                     Ayu Adiati \n                "
+    },
+    {
+      "title": "\n                     SVG Tutorial – How to Code Images with 7 Examples \n                ",
+      "link": "https://www.freecodecamp.org/news/svg-tutorial-learn-to-code-images/",
+      "pubDate": "Fri, 01 Dec 2023 14:13:00 -0500",
+      "creator": "\n                     Hunor Márton Borbély \n                "
+    },
+    {
+      "title": "\n                     How to Use JavaScript Arrow Functions – Explained in Detail \n                ",
+      "link": "https://www.freecodecamp.org/news/javascript-arrow-functions-in-depth/",
+      "pubDate": "Thu, 30 Nov 2023 14:26:49 -0500",
+      "creator": "\n                     Nathan Sebhastian \n                "
+    },
+    {
+      "title": "\n                     How to Create HTML Accordion Elements With and Without JavaScript \n                ",
+      "link": "https://www.freecodecamp.org/news/create-html-accordions-with-and-without-javascript/",
+      "pubDate": "Thu, 30 Nov 2023 14:10:31 -0500",
+      "creator": "\n                     Eamonn Cottrell \n                "
+    },
+    {
+      "title": "\n                     How to Build a Clang AST-Based C++ Static Analysis Tool \n                ",
+      "link": "https://www.freecodecamp.org/news/clang-ast-based-static-analysis-tools/",
+      "pubDate": "Thu, 30 Nov 2023 14:01:21 -0500",
+      "creator": "\n                     Jayant Chowdhary \n                "
+    },
+    {
+      "title": "\n                     Code and Deploy an Instagram Clone with React and Firebase \n                ",
+      "link": "https://www.freecodecamp.org/news/code-and-deploy-an-instagram-clone-with-react-and-firebase/",
+      "pubDate": "Thu, 30 Nov 2023 11:25:58 -0500",
+      "creator": "\n                     Beau Carnes \n                "
+    },
+    {
+      "title": "\n                     API Documentation Best Practices Course \n                ",
+      "link": "https://www.freecodecamp.org/news/api-documentation-best-practices-course/",
+      "pubDate": "Thu, 30 Nov 2023 11:17:38 -0500",
+      "creator": "\n                     Beau Carnes \n                "
+    },
+    {
+      "title": "\n                     How to Use Logic in JavaScript – Operators, Conditions, Truthy/Falsy, and More \n                ",
+      "link": "https://www.freecodecamp.org/news/logic-in-javascript/",
+      "pubDate": "Wed, 29 Nov 2023 16:50:16 -0500",
+      "creator": "\n                     Joan Ayebola \n                "
+    },
+    {
+      "title": "\n                     Advanced Music Production with FL Studio – Tutorial \n                ",
+      "link": "https://www.freecodecamp.org/news/advanced-music-production-fl-studio/",
+      "pubDate": "Wed, 29 Nov 2023 16:30:51 -0500",
+      "creator": "\n                     Beau Carnes \n                "
+    },
+    {
+      "title": "\n                     Why You Might Want to Move Your Workloads Out of the Cloud \n                ",
+      "link": "https://www.freecodecamp.org/news/why-you-might-want-to-move-your-workloads-out-of-the-cloud/",
+      "pubDate": "Wed, 29 Nov 2023 16:24:11 -0500",
+      "creator": "\n                     David Clinton \n                "
+    }
+  ]
 }
