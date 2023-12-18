@@ -1,4 +1,11 @@
 {
   "https://blogs.windows.com/windows-insider/feed/": [],
-  "https://www.freecodecamp.org/news/rss/": []
+  "https://www.freecodecamp.org/news/rss/": [
+    {
+      "title": "\n                     Learn React Props – The Animated Guide \n                ",
+      "link": "https://www.freecodecamp.org/news/react-props-animated-guide/",
+      "pubDate": "Sun, 17 Dec 2023 16:38:23 -0500",
+      "creator": "\n                     Reed Barger \n                "
+    }
+  ]
 }
