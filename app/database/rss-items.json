@@ -1,4 +1,17 @@
 {
   "https://blogs.windows.com/windows-insider/feed/": [],
-  "https://www.freecodecamp.org/news/rss/": []
+  "https://www.freecodecamp.org/news/rss/": [
+    {
+      "title": "\n                     The Odin Project on freeCodeCamp – Interactive Version \n                ",
+      "link": "https://www.freecodecamp.org/news/the-odin-project-interactive-version/",
+      "pubDate": "Mon, 18 Dec 2023 18:23:16 -0500",
+      "creator": "\n                     Quincy Larson \n                "
+    },
+    {
+      "title": "\n                     Use Remix and Strapi to Create Full Stack Apps \n                ",
+      "link": "https://www.freecodecamp.org/news/use-remix-and-strapi-to-create-full-stack-apps/",
+      "pubDate": "Mon, 18 Dec 2023 15:17:12 -0500",
+      "creator": "\n                     Beau Carnes \n                "
+    }
+  ]
 }
