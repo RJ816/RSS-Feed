@@ -2,10 +2,16 @@
   "https://blogs.windows.com/windows-insider/feed/": [],
   "https://www.freecodecamp.org/news/rss/": [
     {
-      "title": "\n                     Full Stack JavaScript Course: Build a Hotel Management Site with Next.js, Sanity.io, and Tailwind CSS \n                ",
-      "link": "https://www.freecodecamp.org/news/build-and-deploy-a-hotel-management-site/",
-      "pubDate": "Wed, 20 Dec 2023 18:54:30 -0500",
+      "title": "\n                     Mastering Behavioral Interviews for Software Developers \n                ",
+      "link": "https://www.freecodecamp.org/news/mastering-behavioral-interviews-for-software-developers/",
+      "pubDate": "Thu, 21 Dec 2023 11:30:17 -0500",
       "creator": "\n                     Beau Carnes \n                "
+    },
+    {
+      "title": "\n                     How to Use an API with Postman – A Step-by-Step Guide \n                ",
+      "link": "https://www.freecodecamp.org/news/how-to-use-an-api-with-postman/",
+      "pubDate": "Wed, 20 Dec 2023 11:57:30 -0500",
+      "creator": "\n                     Joan Ayebola \n                "
     }
   ]
 }
